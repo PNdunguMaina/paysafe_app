@@ -51,7 +51,11 @@ gem 'bootsnap', require: false
 # Automatic Ruby code style checking tool
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Flexible authentication solution for Rails with Warden
 gem 'devise'
+
+# Simple authorization solution for Rails
+gem 'cancancan', '~> 3.4'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
