@@ -1,10 +1,21 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @category %>
-
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-
-  <%= button_to "Destroy this category", @category, method: :delete %>
+<div class="bg-primary">
+  <div class= "container d-flex align-items-center">
+    <%= link_to categories_path, class: 'd-flex text-decoration-none text-white' do %>
+      <i class="fa fa-arrow-left fs-3 " aria-hidden="true"></i>
+    <% end %>
+    <h1 class= "container d-flex justify-content-center text-white">DETAILS</h1>
+  </div>
+</div>
+<div class="container mt-3 border-bottom border-bottom">
+  <div id="img-div" class="col d-flex gap-2">
+    <img src=<%= @category.icon%> alt=<%= @category.name%> />
+    <p><%= @category.name %></p>
+  </div>
+  <div>
+    All transactions
+  </div>
+  <div class="d-flex justify-content-between">
+    <p>TOTAL PAYMENT</p>
+    <p>$17.00</p>
+  </div>
 </div>
