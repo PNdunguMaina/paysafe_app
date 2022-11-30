@@ -3,6 +3,7 @@ class Category < ApplicationRecord
   has_many :payments, dependent: :destroy
 
   validates :name, presence: true
+  validates :icon, presence: true
 
   def count_total_payments
     total = 0
