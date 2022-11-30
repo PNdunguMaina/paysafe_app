@@ -1,13 +1,12 @@
 class PaymentsController < ApplicationController
   before_action :set_payment, only: %i[show edit update destroy]
 
-  # GET /payments or /payments.json
-  def index
-    @payments = Payment.all
-  end
-
   # GET /payments/1 or /payments/1.json
-  def show; end
+  def show
+    @category = Category.find(params[:id])
+    @user = @category.author
+    @payments = @category.payments
+  end
 
   # GET /payments/new
   def new

@@ -1,4 +1,28 @@
-<p style="color: green"><%= notice %></p>
-<h1>TRANSACTIONS</h1>
-<%= render @payment %>
+<div class="container bg-light min-vh-100">
+    <div class="bg-primary py-3 d-flex align-items-center">
+    <%= link_to categories_path, class: 'd-flex text-decoration-none text-white' do %>
+      <i class="fa fa-arrow-left fs-3 ps-3" aria-hidden="true"></i>
+    <% end %>
+        <h1 class="container d-flex justify-content-center text-white">PAYMENT</h1>
+    </div>
+    <div >
+        <div class="row">
+            <div class="col">
+                <div id="img-div" class="col"><img src=<%= @category.icon%> alt=<%= @category.name%> /></div>
+            </div>
+            <div class="col">
+                <p><%= @category.name %></p>
+            </div>
+            <div class="col">
+                <p class="text-end">$<%= @payment.amount %></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="position-absolute top-50 start-50 translate-middle">
+         <div class="pt-5 pb-3"><%= image_tag "circle_tick.png", height: 200 %></div>
+         <h3 class="text-center">Complete<h3>
+         <p class=" fs-6 text-center">Payment was completed successfully.<p>
+    </div>
+</div>
 
