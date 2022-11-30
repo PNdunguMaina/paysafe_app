@@ -3,4 +3,12 @@ class Category < ApplicationRecord
   has_many :payments, dependent: :destroy
 
   validates :name, presence: true
+
+  def count_total_payments
+    total = 0
+    payments.each do |p|
+      total += p.amount
+    end
+    total
+  end
 end

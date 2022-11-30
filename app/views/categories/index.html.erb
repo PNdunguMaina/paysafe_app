@@ -32,7 +32,7 @@
               <p><%= category.created_at.to_date.strftime('%Y %b %d') %></p>
             </div>
             <div class="col">
-              <p>$17</p>
+              <p>$<%= category.count_total_payments %></p>
             </div>
           </div>
         </div>
