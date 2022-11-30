@@ -12,7 +12,16 @@
     <p><%= @category.name %></p>
   </div>
   <div>
-    All transactions
+    <div id="payments" >
+      <% @payments.each do |payment| %>
+      <%= link_to "/categories/#{@category.id}/payments/#{payment.id}", class: "text-decoration-none" do %>
+      <div class="container border border-primary mt-3">
+        <%= payment.name %>
+        <%= payment.amount %>
+       </div>
+      <% end %>
+  <% end %>
+</div>
   </div>
   <div class="d-flex justify-content-between">
     <p>TOTAL PAYMENT</p>
