@@ -5,16 +5,16 @@
     <% end %>
         <h1 class="container d-flex justify-content-center text-white">PAYMENT</h1>
     </div>
-    <div >
+    <div class="mt-3">
         <div class="row">
             <div class="col">
                 <div id="img-div" class="col"><img src=<%= @category.icon%> alt=<%= @category.name%> /></div>
             </div>
             <div class="col">
-                <p><%= @category.name %></p>
+                <p class = "fw-bold text-secondary fs-5"><%= @category.name %></p>
             </div>
             <div class="col">
-                <p class="text-end">$<%= @payment.amount %></p>
+                <p class = "text-end fw-bold text-dark fs-5">$<%= @payment.amount %></p>
             </div>
         </div>
 
