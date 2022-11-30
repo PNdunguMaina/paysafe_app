@@ -30,4 +30,7 @@
     <p>TOTAL PAYMENT</p>
     <p>$<%= @category.count_total_payments %></p>
   </div>
+  <div class="mt-3 d-flex justify-content-center">
+    <%= link_to "New transaction", new_payment_path, class: "btn btn-primary" %>
+  </div>
 </div>
