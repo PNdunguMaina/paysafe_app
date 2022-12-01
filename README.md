@@ -38,7 +38,6 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -48,7 +47,6 @@ After you're finished please remove all the comments and instructions!
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -64,9 +62,6 @@ After you're finished please remove all the comments and instructions!
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Languages</summary>
   <ul>
@@ -86,8 +81,10 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://git-scm.com/">Git</a></li>
     <li><a href="https://github.com/">Github</a></li>
-    <li>TDD</li>
-    <li>BDD</li>
+    <li><a href="https://render.com/">Render</a></li>
+    <li><a href="https://www.heroku.com/">Heroku</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Behavior-driven_development">BDD</a></li>
   </ul>
 </details>
 
@@ -118,7 +115,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
  
- gem install rails
+ - gem install rails
 
 
 ### Setup
@@ -126,30 +123,30 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 
-  cd my-folder
-  git clone https://github.com/PNdunguMaina/paysafe_app.git
+  - cd my-folder
+  - git clone https://github.com/PNdunguMaina/paysafe_app.git
 
 
 ### Install
 
 Install this project with:
 
-  cd paysafe_app
-  bundle install
+  - cd paysafe_app
+  - bundle install
 
 
 ### Usage
 
 To run the project on the server, execute the following command:
 
-  rails server
+  - rails server
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-  rspec spec
+  - rspec spec
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -181,10 +178,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
