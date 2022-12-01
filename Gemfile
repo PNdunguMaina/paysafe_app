@@ -77,9 +77,6 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
-  # help to kill N+1 queries and unused eager loading.
-  gem "bullet", "~> 7.0"
 end
 
 group :test do
