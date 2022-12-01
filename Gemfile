@@ -92,4 +92,4 @@ end
 # Extracting `assigns` and `assert_template` from ActionDispatch
 gem 'rails-controller-testing', '~> 1.0'
 
-gem "jquery-rails", "~> 4.5"
+gem 'jquery-rails', '~> 4.5'
