@@ -77,6 +77,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # help to kill N+1 queries and unused eager loading.
+  gem "bullet", "~> 7.0"
 end
 
 group :test do
@@ -87,9 +90,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy download and use of browser drivers
   gem 'webdrivers'
+  # Extracting `assigns` and `assert_template` from ActionDispatch
+  gem 'rails-controller-testing', '~> 1.0'
 end
-
-# Extracting `assigns` and `assert_template` from ActionDispatch
-gem 'rails-controller-testing', '~> 1.0'
-
-gem 'jquery-rails', '~> 4.5'

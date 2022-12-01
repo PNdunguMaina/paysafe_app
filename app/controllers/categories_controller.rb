@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
-    @category = Category.find(params[:id])
+    @category = Category.includes(:author, :payments).find(params[:id])
     @user = @category.author
     @payments = @category.payments
   end
