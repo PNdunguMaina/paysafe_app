@@ -1,51 +1,162 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# paysafe_app
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
+
+Modify this file to match your project and remove sections that don't apply.
+
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
+
+After you're finished please remove all the comments and instructions!
+-->
+
+<div align="center">
+
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse README Template</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 paysafe_app <a name="about-project"></a>
 
 > This is a Ruby on Rails capstone project which involves building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-## Built With
+## 🛠 Built With <a name="built-with"></a>
 
-- **Languages:** Ruby
-- **Tools & Methods:** Git, GitHub, TDD, BDD
-- **Framework:** Rails
-- **Technology used:** RuboCop, Stylelint, RSpec, Heroku
-- **Database:** PostgreSQL
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Frameworks</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Tools & Methods</summary>
+  <ul>
+    <li><a href="https://git-scm.com/">Git</a></li>
+    <li><a href="https://github.com/">Github</a></li>
+    <li>TDD</li>
+    <li>BDD</li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- Code editor
-- Computer
-- Internet
+In order to run this project you need:
+ 
+ gem install rails
 
-### Live Demo
-Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch a live demo of the project.
 
 ### Setup
 
-### Clone this repository
+Clone this repository to your desired folder:
 
-- $ _git clone https://github.com/PNdunguMaina/paysafe_app.git_
-- $ _cd paysafe_app_
 
-### Install all gems
+  cd my-folder
+  git clone https://github.com/PNdunguMaina/paysafe_app.git
 
-- $ _Run bundle install_
 
-### Run the database
+### Install
 
-- $ _Run rails db:create_
-- $ _Run rails db:migrate_
+Install this project with:
 
-### Access database interactive console
+  cd paysafe_app
+  bundle install
 
-- $ _Run rails c_
 
-### Run rails app on server
+### Usage
 
-- $ _Run rails s_
+To run the project on the server, execute the following command:
 
-## Authors
+  rails server
+
+
+### Run tests
+
+To run tests, run the following command:
+
+  rspec spec
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Patrick Maina**
 
@@ -53,23 +164,48 @@ Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to wat
 - LinkedIn: [Patrick Maina](https://www.linkedin.com/in/pndungumaina/)
 - Twitter: [@ndunguwamaina_](https://twitter.com/ndunguwamaina_)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/PNdunguMaina/recipe_app/issues).
+Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to acknowledge:
 - [Microverse](https://www.microverse.org/)
 - [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
