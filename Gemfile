@@ -81,9 +81,13 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  # Capybara aims to simplify the process of integration testing Rack applications, such as Rails, Sinatra or Merb
   gem 'capybara'
+  # Selenium is a browser automation tool for automated testing of webapps and more
   gem 'selenium-webdriver'
+  # Easy download and use of browser drivers
   gem 'webdrivers'
 end
 
-gem "rails-controller-testing", "~> 1.0"
+# Extracting `assigns` and `assert_template` from ActionDispatch
+gem 'rails-controller-testing', '~> 1.0'

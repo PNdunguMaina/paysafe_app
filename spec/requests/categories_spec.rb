@@ -13,10 +13,12 @@ require 'rails_helper'
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
 RSpec.describe '/categories', type: :request do
-
   describe 'GET /index' do
     before :each do
-      @category = Category.create(name:'McDonald', icon: 'https://repository-images.githubusercontent.com/254798995/2f087780-7be6-11ea-89c8-8e1f7efe2d65', author_id: 1)
+      @category = Category.create(name: 'McDonald',
+                                  # rubocop:disable Layout/LineLength
+                                  icon: 'https://repository-images.githubusercontent.com/254798995/2f087780-7be6-11ea-89c8-8e1f7efe2d65', author_id: 1)
+      # rubocop:enable Layout/LineLength
     end
     it 'renders a successful response' do
       get categories_url
