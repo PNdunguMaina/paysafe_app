@@ -18,6 +18,9 @@
 - Computer
 - Internet
 
+### Live Demo
+Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch a live demo of the project.
+
 ### Setup
 
 ### Clone this repository
