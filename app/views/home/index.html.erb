@@ -1,19 +1,14 @@
-<% if user_signed_in? %> 
- <div> Welcome <%= current_user.email %> </div> 
- <%= link_to "Categories", categories_path %>
-  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
-<% else %>
- 
-</div>
-  <div class="max-vh-100 position-absolute top-50 start-50 translate-middle">
-    <div class="py-5">
-      <h1 class="fw-bolder mb-5 text-center">PaySafe<h1>
-    </div>
-    <div class="">
-      <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary mt-5 vw-50 session-btn" %>
-    </div>
-    <div class="">
-      <%= link_to "Register", new_user_registration_path, class: "btn register-btn" %>
-    </div>
+<% unless user_signed_in? %> 
   </div>
+    <div class="max-vh-100 position-absolute top-50 start-50 translate-middle">
+      <div class="py-5">
+        <h1 class="fw-bolder mb-5 text-center">PaySafe<h1>
+      </div>
+      <div class="">
+        <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary mt-5 vw-50 session-btn" %>
+      </div>
+      <div class="">
+        <%= link_to "Register", new_user_registration_path, class: "btn register-btn" %>
+      </div>
+    </div>
 <% end %>

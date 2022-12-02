@@ -2,6 +2,7 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
+/* splash screen page */
 .session-btn {
     display: block;
     width: 80vw;
@@ -17,4 +18,11 @@ body {
     background-color: none;
     border: none;
     text-align: center;
+}
+
+/* navbars */
+.top-nav {
+    background-color: #3778c2;
+    top: 0;
+    position: sticky;
 }

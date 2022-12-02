@@ -1,13 +1,15 @@
+<nav class="top-nav py-4">
+  <div class="d-flex justify-content-center text-white"><h1>LOG IN</h1></div>
+</nav>
 <div class="position-absolute top-50 start-50 translate-middle max-vh-100">
-<h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field fs-5 fw-bold">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="field fs-5 fw-bold fs-5 fw-bold">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
