@@ -1,6 +1,7 @@
 databases:
   - name: paysafe
-    ipAllowList: []
+    databaseName: paysafe_app_production
+    user: paysafe_app
 
 services:
   - type: web
@@ -14,9 +15,3 @@ services:
           name: paysafe
           property: connectionString
       - key: RAILS_MASTER_KEY
-        sync: false
-  - type: redis
-    name: redis
-    ipAllowList: []
-    plan: free
-    maxmemoryPolicy: noeviction
