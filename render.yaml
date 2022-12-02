@@ -1,7 +1,6 @@
 databases:
-  - name: paysafe
-    databaseName: paysafe_app_production
-    user: paysafe_app
+  - name: postgres
+    ipAllowList: []
 
 services:
   - type: web
@@ -10,8 +9,14 @@ services:
     buildCommand: './bin/render-build.sh'
     startCommand: bundle exec rails s
     envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: paysafe
+          name: postgres
           property: connectionString
-      - key: RAILS_MASTER_KEY
+    - type: redis
+      name: redis
+      ipAllowList: []
+      plan: free
+      maxmemoryPolicy: noeviction      
