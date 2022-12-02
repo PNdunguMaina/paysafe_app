@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: paysafe_app_production
   username: paysafe_app
   password: <%= ENV["PAYSAFE_APP_DATABASE_PASSWORD"] %>
