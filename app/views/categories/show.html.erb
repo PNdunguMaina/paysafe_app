@@ -32,7 +32,7 @@
     <p class = "fw-bold text-dark fs-5">$<%= @category.count_total_payments %></p>
   </div>
   <div class="my-5 d-flex justify-content-center">
-    <%= link_to "New transaction", new_payment_path, class: "btn btn-primary" %>
+    <%= link_to "New transaction", new_category_payment_path(@category), class: "btn btn-primary" %>
   </div>
   </div>
 </div>

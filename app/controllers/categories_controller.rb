@@ -3,14 +3,15 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.all
+    @categories = current_user.categories
+    @category = @categories.find_by(id: params[:id])
   end
 
   # GET /categories/1 or /categories/1.json
   def show
     @category = Category.find(params[:id])
     @user = @category.author
-    @payments = @category.payments
+    @payments = @category.payments.order(created_at: :desc)
   end
 
   # GET /categories/new
@@ -24,7 +25,7 @@ class CategoriesController < ApplicationController
   # POST /categories or /categories.json
   def create
     @category = Category.new(category_params)
-    @category.author_id = current_user.id
+    @category.author = current_user
 
     respond_to do |format|
       if @category.save
