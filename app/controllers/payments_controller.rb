@@ -12,6 +12,7 @@ class PaymentsController < ApplicationController
   def new
     @payment = Payment.new
     @categories = Category.all
+    @category = Category.find(params[:category_id])
   end
 
   # GET /payments/1/edit
@@ -20,12 +21,14 @@ class PaymentsController < ApplicationController
   # POST /payments or /payments.json
   def create
     @payment = Payment.new(payment_params)
+    @categories = Category.where(id: categories_params[:categories])
     @category = Category.find(params[:category_id])
     @payment.author = current_user
+    @payment.categories << @categories
 
     respond_to do |format|
       if @payment.save
-        format.html { redirect_to payment_url(@payment), notice: 'Payment was successfully created.' }
+        format.html { redirect_to categories_path(@category), notice: 'Payment was successfully created.' }
         format.json { render :show, status: :created, location: @payment }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,8 +67,12 @@ class PaymentsController < ApplicationController
     @payment = Payment.find(params[:id])
   end
 
+  def categories_params
+    params.require(:payment).permit(categories: [])
+  end
+
   # Only allow a list of trusted parameters through.
   def payment_params
-    params.require(:payment).permit(:name, :amount, :category_id)
+    params.require(:payment).permit(:name, :amount)
   end
 end
