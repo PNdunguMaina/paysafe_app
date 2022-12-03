@@ -46,6 +46,7 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
+  - [🚀 Video](#video)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -155,7 +156,7 @@ To run tests, run the following command:
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Video <a name="live-demo"></a>
 
 - Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch video about the project features.
 
