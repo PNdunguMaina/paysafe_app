@@ -39,6 +39,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Video](#video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -46,7 +47,6 @@ After you're finished please remove all the comments and instructions!
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-  - [🚀 Video](#video)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -106,6 +106,14 @@ After you're finished please remove all the comments and instructions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Video <a name="live-demo"></a>
+
+- Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch video about the project features.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -148,19 +156,6 @@ To run the project on the server, execute the following command:
 To run tests, run the following command:
 
   - rspec spec
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Video <a name="live-demo"></a>
-
-- Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch video about the project features.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
