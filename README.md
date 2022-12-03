@@ -101,7 +101,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663)
+- Click [here](https://paysafe-oyh9.onrender.com) to see the project live demo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,6 +148,16 @@ To run tests, run the following command:
 
   - rspec spec
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Click [here](https://www.loom.com/share/fd496c8b503549bb900b1665a06e6663) to watch video about the project features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
