@@ -5,5 +5,5 @@ class Payment < ApplicationRecord
 
   validates :name, presence: true
   validates :amount, numericality: true, comparison: { greater_than: 0 }
-  validates :category_id, presence: true
+  validates :category_payments, presence: true
 end
