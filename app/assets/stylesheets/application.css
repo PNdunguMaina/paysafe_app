@@ -24,3 +24,17 @@ body {
   top: 0;
   position: sticky;
 }
+
+.new-category {
+  display: block;
+  width: 100vw;
+  border: none;
+  position: fixed;
+  bottom: 0;
+  height: 2.5rem;
+  background-color: #4fbf5e;
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
