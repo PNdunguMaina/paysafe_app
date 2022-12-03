@@ -4,6 +4,7 @@
       <i class="fa fa-arrow-left fs-3 " aria-hidden="true"></i>
     <% end %>
     <h1 class= "container d-flex justify-content-center text-white">DETAILS</h1>
+    <div class="position-absolute mx-3 end-0"><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'btn btn-danger' %></div>
   </div>
 </div>
 <div class="container mt-3 py-3  bg-light  ">
