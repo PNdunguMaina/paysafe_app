@@ -25,22 +25,22 @@
   <div id="categories" class="container bg-light">
     <% @categories.each do |category| %>
       <%= link_to "/categories/#{category.id}", class: "text-decoration-none" do %>
-        <div class="container bg-white mt-4 shadow-lg p-3 mb-5 rounded">
+        <div class="container bg-white mt-4 shadow-lg p-3 rounded">
           <div class="row">
-            <div id="img-div" class="col"><img src=<%= category.icon%> alt=<%= category.name%> /></div>
+            <div id="img-div" class="col"><img src=<%= category.icon%> alt=<%= category.name%> class="img" /></div>
             <div class="col">
               <p class = "fw-bold text-secondary fs-5"><%= category.name %><p>
               <p class = "fw-light text-secondary"><%= category.created_at.to_date.strftime('%Y %b %d') %></p>
             </div>
             <div class="col d-flex justify-content-end">
-              <p class = "fw-bold text-dark fs-5">$<%= category.count_total_payments %></p>
+              <p class = "fw-bold text-dark fs-5">$<%= category.payments.sum(:amount) %></p>
             </div>
           </div>
         </div>
       <% end %>
     <% end %>
   </div>
-  <div class="d-flex justify-content-center ">
+  <div class="d-flex justify-content-center home-div">
     <%= link_to "New category", new_category_path, class: "btn text-white fs-5 fw-bolder new-category py-5" %>
   </div>
 

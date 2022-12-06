@@ -10,8 +10,8 @@ class CategoriesController < ApplicationController
   # GET /categories/1 or /categories/1.json
   def show
     @category = Category.find(params[:id])
-    @user = @category.author
-    @payments = @category.payments.order(created_at: :desc)
+    @payments = @category.payments
+    @total = @payments.sum(:amount)
   end
 
   # GET /categories/new

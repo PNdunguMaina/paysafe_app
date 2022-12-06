@@ -4,13 +4,12 @@
       <i class="fa fa-arrow-left fs-3 " aria-hidden="true"></i>
     <% end %>
     <h1 class= "container d-flex justify-content-center text-white">DETAILS</h1>
-    <div class="position-absolute mx-3 end-0"><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'btn btn-danger' %></div>
   </div>
 </div>
 <div class="container mt-3 py-3  bg-light  ">
 <div class = "bg-white shadow-lg p-3 mb-5 rounded">
-  <div id="img-div" class="col d-flex gap-2 border-bottom border-light border-4">
-    <img src=<%= @category.icon%> alt=<%= @category.name%> />
+  <div id="img-div" class="col d-flex border-bottom border-light border-4 justify-content-around">
+    <img src=<%= @category.icon%> alt=<%= @category.name %> class="img" />
     <p class = "fw-bold text-secondary fs-5 d-flex align-items-center"><%= @category.name %></p>
   </div>
   <div>

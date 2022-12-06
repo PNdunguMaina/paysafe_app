@@ -38,3 +38,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.img {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.home-div {
+  margin-bottom: 4.5rem;
+}
